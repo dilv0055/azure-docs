@@ -205,11 +205,11 @@ You'll use a [Web.config transform](http://www.asp.net/mvc/tutorials/deployment/
 
     ![Show connection strings](./media/cloud-services-dotnet-get-started/showcs.png)
 
-    The portal displays connection strings, with a placeholder for the password.
+    The portal displays connection strings, with a placeholder for the username and password.
 
     ![Connection strings](./media/cloud-services-dotnet-get-started/connstrings.png)
 3. In the *Web.Release.config* transform file, delete `{connectionstring}` and paste in its place the ADO.NET connection string from the Azure portal.
-4. In the connection string that you pasted into the *Web.Release.config* transform file, replace `{your_password_here}` with the password you created for the new SQL database.
+4. In the connection string that you pasted into the *Web.Release.config* transform file, replace `{your_username}` with the username and `{your_password_here}` with the password you created for the new SQL database.
 5. Save the file.  
 6. Select and copy the connection string (without the surrounding quotation marks) for use in the following steps for configuring the worker role project.
 7. In **Solution Explorer**, under **Roles** in the cloud service project, right-click **ContosoAdsWorker** and then click **Properties**.
